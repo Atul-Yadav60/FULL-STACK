@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #1a1a1a;
+            margin: 0; 
+            padding: 0;
+            height: 100vh;
+             /* <!--Flex Box is display property in html help us to move elemnt
+    easely in css--> */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .Card {
+            background-color: #bfbcbc;
+            /* Reduce sharp cornor */
+            border-radius:7px ;
+            padding: 70px;
+            width: 200px;
+            
+        }
+        h2{
+            color: #080006b3;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        input{
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 10px;
+            border: 2px solid black;
+            background-color: rgb(186, 192, 28);
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            gap:4px;
+        }
+        button{
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            background-color:orange;
+
+        }
+        button:hover{
+           background-color: aquamarine; 
+        }
+    </style>
+</head>
+<body>
+    <!--vh yani view port height device ke hisaab se height change hogi-->
+   
+    <div class="Card">
+        <h2>Login</h2>
+        <form >
+        
+           <input type="email" name="" placeholder=" Enter Email here">
+           <input type="password" name="" placeholder="Enter Password">
+           <button type="Submit">Login</button>
+           <button id="Reset">Reset</Button>
+        </form>
+    </div> 
+</body>
+</html>
