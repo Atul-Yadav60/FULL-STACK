@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS SElector</title>
+    <style>
+        /* 1.Universal Selector */
+           *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+           }
+
+        /* 2.Type Selector */
+           /* select ant type like p,h etc */
+        p{
+            font-size: 40px;
+            /* sirf margin means all the direction */
+            /* margin paddin ye sab clock wise apply hote hai */
+            margin: 10px,20px,10px,20px; 
+            padding: 1px,2px,3px,4px;
+        }
+        /* 3.class selector */
+         .hightlight{
+            background-color: #ff0000;
+         }
+        /* 4.id selector */
+            /*  you always have 1 unique id on one web page
+            */
+            #header{
+               background-color: #c1d6a4;
+            }
+        /* 5.Attribute selector */
+        input[type="text"]{
+            border: 9px solid #21a2c9;
+        }
+        /* from here advance selectors starts */
+        /* 6.Descendent Selector */
+          article p {
+            font-style: italic;
+            background-color: #1a1a;
+            color: whitesmoke;
+            padding: 10px;
+            margin-bottom: 10px;
+          }
+        /* 7.child Selector */
+           /* here we are targeting child not decendent */
+         div > p {
+            list-style-type:squre;
+            background-color: orange;
+         }
+        /*  8.Adjecent sibiling selector*/
+         h1 + p {
+            font-weight: bold;
+            background-color: pink;
+         }
+        /* 9.General sibiling selector */
+          h2 ~ p{
+            color: green
+          }
+        /* 10.Pseudo-class selector */
+          /* ancher tag per jasi mouch jaye ga coloer change
+          kisi ko bhi select ker sakte hai */
+         a:hover {
+            background-color: rgb(220, 220, 233);
+            text-decoration: none;
+            color: #1a1a1a;
+            margin: 5px;
+            padding: 4px;
+
+         }
+         /* Pseudo-element selector */
+            p::first-letter{
+                font-weight: bold;
+                font-size: 80px;
+            }
+         /* Grouping selector */
+
+         h1,h2,h3{
+            color:violet
+         }
+    </style>
+</head>
+<body>
+    <header id="header">This is the Header</header>
+
+    <h1>Main Heading</h1>
+    <p>
+       this paragraph is adjecent to h1 And demonstarate the adjecent 
+        siblings of selectors
+    </p>
+    <p>
+        This is a regular paragraph Showing the type SElector
+    </p>
+
+    <p class="hightlight">
+       This Paragraph has a higlight class, demonstarte 
+        demonstarating the class selector.
+    </p>
+
+    <input type="text" placeholder="Enter text here">
+
+    <article>
+        <p>
+            This paragraph is inside an article, showing 
+            the descendent selectors.
+        </p>
+        <p>Lorem ipsum, dolor
+             sit amet consectetur adipisicing elit.
+              Officia, soluta.</p>
+    </article>
+
+    <div>
+        <p>I am a child</p>
+        <p>I am A child</p>
+        <section>
+            <p>I am A descendent</p>
+        </section>
+    </div>
+
+    <h2>Sub heading</h2>
+    <p>
+        this is a sibiling paragraph to h2,demonstarating the general sibiling selectors
+
+    </p>
+    <div>This is sibilinng div to h2</div>
+    <p>
+     This is another sibiling paragraph to h2
+    </p>
+    <a href="#">hover over me th see the pseudo class 
+        selector in action
+    </a>
+
+    <p>
+        this paragraph demonstartes pseudo-element selector with a styled
+        first
+        line and first letter
+
+    </p>
+
+    <h2>Heading 3</h2>
+    <p>
+        The Heading h1,h2,h3 use the grouping selector 
+        for consistant font 
+        family .
+    </p>
+
+</body>
+</html>
