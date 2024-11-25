@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+            padding: 20px;
+            background-color: #bcb9b9;
+
+        }
+
+        .nav_1 {
+            border: 2px solid red;
+            background-color: #f8f9fa;
+            padding: 10px;
+
+        }
+
+        /* now navigation bar per hover karenge to kya effecrt hoga */
+        .nav_1 a::after {
+            /* after property always need to have content */
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            background-color: rgb(99, 99, 162);
+            transform: scaleX(0);
+            transition: transform 0.3s ease-in-out;
+
+        }
+
+        .nav_1 a:hover::after {
+            transform: scaleX(1);
+        }
+
+        .nav_1 ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+            margin: 0;
+            padding: 0px;
+
+        }
+
+        .nav_1 li {
+            display: inline;
+
+        }
+
+        .nav_1 a {
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.84);
+            /* background-color: green; */
+            padding: 5px 15px;
+
+            position: relative;
+        }
+
+        .nav_container {
+            margin-bottom: 30px;
+        }
+
+        .nav_1 .login_button {
+            border-radius: 5px;
+            background-color: rgb(27, 27, 200);
+            color: white;
+            border: none;
+            padding: 5px 15px;
+            cursor: pointer;
+
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav_container">
+        <h1>Variation 1:Horizontal with underline effect</h1>
+        <nav class="nav_1">
+
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Product</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <button class="login_button">Login</button>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="nav_container">
+        <h1>Variation 2: Vertical with hover effect</h1>
+        <nav class="nav_2">
+
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Products</a>
+                </li>
+            </ul>
+            <button class="Login_button">login</button>
+        </nav>
+    </div>
+
+    <div class="nav_container">
+        <h1>variation 3: horizontal with drop down</h1>
+        <nav class="nav_3">
+
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+
+                </li>
+                <li>
+                    <a href="#">About</a>
+                    <div class="dropdown-cintent">
+                        <a href="#">Our story</a>
+                        <a href="#">our Products</a>
+                    </div>
+
+                </li>
+                <li>
+                    <button class="Login_button">Login</button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</body>
+
+</html>
