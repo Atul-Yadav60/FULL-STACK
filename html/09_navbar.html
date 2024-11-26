@@ -124,6 +124,68 @@
         border: 1px solid black;
        }
        
+       .nav_3 {
+        background-color: orange;
+        margin: 0;
+        padding: 10px;
+       }
+
+       .nav_3 ul{
+        display: flex;
+        padding: 0px;
+        margin: 0px;
+        list-style-type:none;
+        justify-content: space-around;
+        align-items: center;
+       }
+
+       .nav_3 a{
+           text-decoration: none;
+           display: block;
+           color:black;
+           position: relative;
+
+       }
+       
+       .nav_3 .dropdown-cintent{
+        display: none;
+        text-align: center;
+        text-size-adjust: 10px;
+        text-shadow: 0cqi;
+
+       }
+       .nav_3 .Login_button{
+        padding: 10px;
+        background-color: red;
+        border: black;
+        border-radius: 10px;
+        display: inline;
+       }
+
+       .nav_3 .drop:hover .dropdown-cintent{
+        display: block;
+        position: absolute;
+        background-color: rgb(213, 121, 121);
+        min-width: 100px;
+       
+       }
+
+      .nav_3 a::after{
+        content: "";
+        position: absolute;
+        transform: scaleX(0);
+        transition: transform 0.3s ease-in-out;
+        background-color: green;
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        width: 100%;
+        border: darkblue;
+        
+      }
+      .nav_3 a:hover::after{
+        transform: scaleX(1);
+      }
     </style>
 </head>
 
@@ -179,11 +241,12 @@
                     <a href="#">Home</a>
 
                 </li>
-                <li>
+                <li class="drop">
                     <a href="#">About</a>
                     <div class="dropdown-cintent">
                         <a href="#">Our story</a>
                         <a href="#">our Products</a>
+                        <a href="#">Contact us</a>
                     </div>
 
                 </li>

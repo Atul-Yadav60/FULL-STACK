@@ -1,0 +1,59 @@
+body,html{
+  
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+ .container{
+   background: linear-gradient(140deg,#9d8146,#26a940d4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+ }
+ .content{
+    background-color:rgba(96, 123, 89, 0.9) ;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    max-width:400px ;
+    min-width: 300px;
+    
+    
+ }
+.logo{
+    width: 150px;
+    height: 100px;
+    object-fit: contain;
+}
+
+button{
+    border-radius: 5px;
+    border-color: none;
+    background-color: white;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 40px;
+    background-color: purple;
+}
+
+form{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    
+}
+
+
+/* [] == use this to targey specific field  */
+input[type="email"]{
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+
+
