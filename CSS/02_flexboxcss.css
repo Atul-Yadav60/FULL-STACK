@@ -1,0 +1,75 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    /* line Heightgap deta hai her ke lign ke bich  */
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: gray;
+}
+h1 {
+     font-style: italic;
+     color: #020202dd;
+}
+h2{
+    font-weight: bolder;
+    color: #333;
+    
+}
+.container{
+    border: 2px solid black;
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.flex-container{
+    display: flex;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin: 5px;
+}
+.pastel-1{
+    background-color: rgb(25, 48, 181);
+}
+.pastel-2{
+    background-color: #30b93edd;
+}
+
+.pastel-3{
+    background-color: rgb(25, 95, 72);
+}
+.pastel-4{
+    background-color: #ac18b1dd;
+    
+}
+.pastel-5{
+    background-color: #217505dd;
+}
+.pastel-6{
+    background-color: #d5c022dd;
+    
+}
+.pastel-7{
+    background-color: #cd1818dd;
+    
+}
+.pastel-8{
+    background-color: rgb(12, 139, 159);
+    
+}
+.pastel-9{
+    background-color: rgb(208, 135, 26);
+    
+}
+.pastel-10{
+    background-color: rgb(154, 172, 75);
+}
