@@ -1,0 +1,192 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family:'Open Sans',sans-serif;
+    
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 500px;
+    width: 300px;
+    /* border: 5px solid red; */
+    border-color: 2px solid red;
+
+}
+.card_head{
+   position: reletive;
+   height: 225px;
+   border-radius: 20px 20px 0 0;
+   background:linear-gradient(-250deg,rgb(216, 210, 210),red);
+   border: 2px solid rgba(179, 36, 36, 0.91);
+  transition: box-shadow 0.3s ease;
+   border-bottom: none;
+}
+.card_head:hover{
+    box-shadow: 10px,rgba(179, 36, 36, 0.91);
+}
+img {
+   position: relative;
+    width: 280px;
+    height: 210px;   
+    top: 35px;
+    right:90px;
+    z-index: 2;
+   
+}  
+.shoe{
+    position: absolute;
+    right: 150px;
+    bottom: 0px;
+    width: 250px;
+    z-index: 2;
+     background:linear-gradient(-250deg,black,red);
+
+    
+}
+.shoe_capsion{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 230px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    z-index: 2;
+}
+.more_info{
+    position: absolute;
+    top: 50px;
+    left: 200px;
+   
+    z-index: 2;
+}
+.more_info a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.back_text{
+    position: absolute;
+    bottom:350px;
+    left: 80px;
+    font-size: 60px;
+    font-weight: bold;
+    right: 30px;
+    opacity: .2; 
+    z-index: 1;
+    rotate: 40deg;
+    user-select: none;
+    
+    
+}
+
+.card_body{
+    height: 225px;
+    border: 1px solid red;
+    border-top: none;
+    border-radius: 0 0 20px 20px;
+}
+.shoes_info{
+    position: relative;
+    top: 5px;
+    left: 7px;
+    
+}
+.bage{
+    position: relative;
+    left: 7px;
+    top: 5px;
+    background-color:red;
+    color: white;
+    border-radius: 3px;
+    font-size: 11px;
+    padding: 1px 3px 1px 3px;
+    
+    
+}
+.shoes_rating{
+    position: relative;
+    left: 8px;
+    top: 5px;
+    display: black;
+    font-size: 10px;
+}
+.checked{
+    color: red;
+}
+.shoes_rating i.gray{
+    color: gray;
+}
+.shoe_price{
+    position: relative;
+    left: 1px;
+    top: 1px;
+    font-size: 12px;
+    /* font-weight: bold; */
+    display: block;
+    font-weight: bold;
+}
+.shoe_price .price{
+    
+    font-size: 13px;
+
+}
+ .paisaa{
+    position: relative;
+    left: 80px;
+    bottom: 25.5px;
+} 
+.shoe_price .tag{
+    margin-left: 5px;
+   
+}
+
+.shoe-price .rs{
+    font-size: 19px;
+}
+.size{
+    position: relative;
+    left: 8px;
+    bottom:25px;
+    font-size: 12px;
+    font-weight: bold;
+}
+#select{
+    position: relative;
+    border-radius: 5px;
+    opacity: .7;
+    text-align: center;
+    margin-left: 76px;
+    bottom:28px;
+}
+.shoe_color{
+    position: relative;
+    left: 10px;
+    bottom: 40px;
+    font-size: 14px;
+    top: 5.5px;
+    
+  
+}
+.ul_color{
+    display: inline;
+}
+.shoe_color ul li{
+    list-style: none;
+    float: left;
+    margin-right: 20px;
+}
+.shoe_color ul li:first-child{
+    margin-right: 10px;
+}
+.shoe_color ul li a{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 5px;
+}
+.shoe_color ul li a.black-white{
+    background-color: #ff4500;
+}
