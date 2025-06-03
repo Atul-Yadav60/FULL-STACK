@@ -42,3 +42,44 @@ document.getElementById("reemoveLastTask").addEventListener('click', function(){
     let taskLists = document.getElementById("taskList");
     taskLists.lastElementChild.remove();
 });
+
+
+// Example 6
+document.getElementById("clickmebuttion").addEventListener('dblclick',function(){
+    alert("Chai code");
+});
+
+//example 7
+document.getElementById("teaList").addEventListener('click',function(event){
+    if(event.target && event.target.matches('.teaItem')){
+        alert("You selected: "+ event.target.textContent)
+    }
+})
+
+// example 8
+document.getElementById("feedbackform").addEventListener('submit', function(events){
+    events.preventDefault();
+    let feedback = document.getElementById("feedbackinput").value;
+    console.log("feedback")
+    document.getElementById("feedbackdisplay").textContent = `eedback is : ${feedback}`
+    feedbackdisplay.style.backgroundColor='green'
+    feedbackdisplay.style.size = '25px'
+
+})
+
+// example 9
+
+document.addEventListener('DOMContentLoaded',function(){
+    document.getElementById('domstatus').textContent="DOM Fully Loaded"
+})
+
+
+// example 10
+document.getElementById("toggleHighlight").addEventListener('click', function()
+{
+   let texts=document.getElementById("descriptiontext");
+   //texts.classList.add('highlight')
+   texts.classList.toggle('highlight')
+   texts.style.textTransform='uppercase';
+
+});
