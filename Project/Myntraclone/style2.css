@@ -149,12 +149,17 @@ nav sup{
 /*********************  MAIN   ***************************/
 main{
     border: 2px solid red;
-    position: relative;
-    margin-top: 87px;
+    position: absolute;
+    margin-top: 100px;
+    width: 100%;
+    height: 100px;
 }
 
 
 /*****************************Footer*************************/
 footer{
     border: 2px solid red;
+    position: relative;
+    width: 100%;
+    height: 30px;
 }
