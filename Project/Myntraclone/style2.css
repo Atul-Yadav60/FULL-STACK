@@ -239,7 +239,7 @@ hr {
     margin: 2px 0;
 }
 .column h4 {
-    font-size: 14px;
+    font-size: 13px;
     color: #282c3f;
     margin-bottom: 10px;
     text-transform: uppercase;
@@ -298,7 +298,7 @@ nav sup {
 .search-box > input {
     width: 90%;
     height: 90%;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 300;
     padding-left: 13px;
     outline: none;
