@@ -336,6 +336,11 @@ nav sup {
     -webkit-text-stroke: 0.00005px;
 }
 
+.profile-dropdown{
+    display: none;
+
+}
+
 /********************* Main Content ***************************/
 main {
     width: 100%;
