@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atul Yadav</title>
+    <!--Fevicon-->
+    <link rel="icon" href="./favicon.jpg" type="image/jpg" />
+
     <link rel="stylesheet" href="./01_style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <!-- Nav Bar-->
     <nav class="navbar">
@@ -27,12 +34,6 @@
                     <a href="#projects" class="nav-link">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#hpme" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contack</a>
-                </li>
-                <li class="nav-item">
                     <button class="theme-toggle" id="theme-toggle">
                         <i class="fas fa-moon"></i>
 
@@ -40,13 +41,155 @@
                 </li>
 
             </ul>
-            <div class="menu-line">
-                <span class="bar"></span>     
-                <span class="bar"></span>     
-                <span class="bar"></span>     
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </div>
     </nav>
+
+    <!-- Hero Section-->
+     <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-line">Hi , I'm</span>
+                        <span class="title-line">Atul Yadav</span>
+                        <span class="title-line">Engineering Student</span>
+                    </h1>
+                    <p class="hero-decription">
+                        Passionate about creating innovative solutions through code.
+                        Exploring the intersection of technology and creativity to build
+                        applications that make a difference.
+
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="./self.jpg" alt="Atul Yadav" class="profile-img">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow">
+                    <i class="fas fa-chevron-down"></i>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--About Section-->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get To Know me better</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="glass-card">
+                        <h3>My Journey</h3>
+                        <p>
+                            I'm a passionate Computer Science Engineering student with a deep love for
+                            problem-solving and innovation. Currently pursuing my degree at St. John College of Engineering and Management,
+                            I've been fascinated by the power of technology to transform ideas into reality.
+                        </p>
+                        <p>
+                            My journey in programming began during high school, and since then, I've been
+                            constantly learning and exploring new technologies. I believe in writing clean,
+                            efficient code and creating user-centered solutions.
+                        </p>
+                        <div class="education">
+                            <h4>Education</h4>
+                            <div class="edu-item">
+                                <div class="edu-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div class="edu-details">
+                                    <h5>Bachelor of Technology - AIML</h5>
+                                    <p>St. John College of Engineering and Management • 2022 - 2026</p>
+                                    <span class="gpa">CGPA: 8.7/10</span>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stats-grid">
+                        <div class="stat-item glass-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="stat-content">
+                                <h3 class="stat-number" data-target="50">0</h3>
+                                <p class="stat-lable">Project Completed</p>
+                            </div>
+                        </div>
+                        <div class="stat-item glass-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <div class="stat-content">
+                                <h3 class="stat-number" data-target="15">0</h3>
+                                <p class="stat-lable">Hackathon Won</p>
+                            </div>
+                        </div>
+                        <div class="stat-item glass-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="stat-content">
+                                <h3 class="stat-number" data-target="3">0</h3>
+                                <p class="stat-label">Years Experience</p>
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--Skill Section-->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <p class="section-subtitle">Technologies I work with</p>
+            </div>
+            <div class="skills-container">
+                <div class="skills-category">
+                    <h3 class="category-title">Programming Languages</h3>
+                    <div class="skills-grid">
+                        <div class="skills-item glass-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-python"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Python</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90"></div>
+                                </div>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="./01_script.js"></script>
 </body>
+
 </html>
