@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Python Programming Language Card</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+  background: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  width: 320px;
+  text-align: center;
+  transition: box-shadow 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 16px 48px rgba(0,0,0,0.3);
+}
+
+.icon-container {
+  margin-bottom: 1rem;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.python-logo {
+  width: 80px;
+  height: 80px;
+}
+
+.snake {
+  transition: transform 0.7s cubic-bezier(.68,-0.55,.27,1.55);
+  transform-origin: 50% 50%;
+}
+
+/* Initial state: snakes are apart */
+.snake-blue {
+  transform: translateY(-20px) rotate(-15deg) scale(0.9);
+  opacity: 0.7;
+}
+.snake-yellow {
+  transform: translateY(20px) rotate(15deg) scale(0.9);
+  opacity: 0.7;
+}
+
+/* On hover: snakes animate to form the logo */
+.card:hover .snake-blue {
+  transform: translateY(0) rotate(0deg) scale(1);
+  opacity: 1;
+}
+.card:hover .snake-yellow {
+  transform: translateY(0) rotate(0deg) scale(1);
+  opacity: 1;
+}
+
+h2 {
+  color: #306998;
+  margin: 0.5rem 0 0.2rem 0;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+p {
+  color: #444;
+  font-size: 1rem;
+  margin: 0;
+}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="icon-container">
+      <!-- SVG will go here -->
+      <svg class="python-logo" viewBox="0 0 100 100" width="80" height="80">
+        <!-- Snake 1 (top, blue) -->
+        <g class="snake snake-blue">
+          <path d="M50,10 Q80,10 80,40 Q80,70 50,70 Q20,70 20,40 Q20,20 50,20" fill="#306998"/>
+          <circle cx="65" cy="25" r="4" fill="#fff"/>
+          <circle cx="67" cy="25" r="1.5" fill="#306998"/>
+        </g>
+        <!-- Snake 2 (bottom, yellow) -->
+        <g class="snake snake-yellow">
+          <path d="M50,90 Q20,90 20,60 Q20,30 50,30 Q80,30 80,60 Q80,80 50,80" fill="#FFD43B"/>
+          <circle cx="35" cy="75" r="4" fill="#fff"/>
+          <circle cx="33" cy="75" r="1.5" fill="#FFD43B"/>
+        </g>
+      </svg>
+    </div>
+    <h2>Python</h2>
+    <p>Python is a popular, versatile programming language known for its readability and wide range of applications.</p>
+  </div>
+</body>
+</html>

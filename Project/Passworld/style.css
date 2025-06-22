@@ -1,1 +1,66 @@
-s
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html ,body{
+    width: 100%;
+    min-height: 100vh;
+    background:#0a0119;
+}
+
+.page1{
+    position: relative;
+    color: white;
+    overflow: hidden;
+}
+
+nav{
+    height: 5rem;
+    padding: 2rem ,3rem , 2rem , 3rem ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+a{
+    text-decoration: none;
+    color: white;
+
+}
+
+nav h1{
+    font-size: 2rem;
+    font-family: "Yellowtail" , cursive;
+    font-weight: 400;
+}
+
+.navigation{
+    position: relative;
+    display: flex;
+    gap: 2rem;
+    z-index: 1;
+}
+
+.navigation a{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+
+}
+
+.main{
+    height: calc(100vh-5rem);
+    display: flex;
+}
+
+.main .left{
+    width: 60%;
+    padding: 2rem 4rem 2rem 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    
+}
