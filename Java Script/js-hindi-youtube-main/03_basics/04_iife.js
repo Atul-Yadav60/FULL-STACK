@@ -1,4 +1,6 @@
 // Immediately Invoked Function Expressions (IIFE)
+ 
+// IIFE is a function that execute imediatly. and erase global scope polution which create problem 
 
 
 (function chai(){

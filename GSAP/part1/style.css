@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+    color: white;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    
+}
+body{
+    background-color: black;
+
+}
+
+#box1{
+    width: 200px;
+    height: 200px;
+    background-color: crimson;
+}
+#box3{
+    width: 200px;
+    height: 200px;
+    background-color: royalblue;
+}
+
+#box4{
+    width: 200px;
+    height: 200px;
+    background-color: rgba(60, 232, 34, 0.874);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+#box2{
+    width: 200px;
+    height: 200px;
+    background-color:yellow;
+    
+}

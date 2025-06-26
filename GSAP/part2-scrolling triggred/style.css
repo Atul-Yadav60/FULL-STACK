@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+
+}
+
+.page1{
+    width: 100%;
+    height: 100%;
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page2{
+    width: 100%;
+    height: 100%;
+    background-color:aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+
+}
+
+.page3{
+    width: 100%;
+    height: 100%;
+    background-color:tomato;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#box{
+    height: 300px;
+    width: 300px;
+    background-color: black;
+}
+
+h2{
+    font-size: 60px;
+    position: relative;
+    background-color: green;
+    
+
+}
+
+h3{
+    font-size: 20px;
+    position: relative;
+    background-color: blueviolet;
+}
