@@ -3,16 +3,16 @@
 
 // const values = coding.forEach( (item) => {
 //     //console.log(item);
-//     return item
+//     return item  // for each never return any value 
 // } )
 
 // console.log(values);
 
 const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-// const newNums = myNums.filter( (num) => {
-//     return num > 4
-// } )
+ const newNums = myNums.filter( (num) => {
+     return num > 4  /// by using filter we can return value in arow finction
+ } )
 
 // const newNums = []
 
@@ -38,6 +38,7 @@ const books = [
   ];
 
   let userBooks = books.filter( (bk) => bk.genre === 'History')
+  // it return 2 books
 
   userBooks = books.filter( (bk) => { 
     return bk.publish >= 1995 && bk.genre === "History"

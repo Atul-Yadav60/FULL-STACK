@@ -11,9 +11,11 @@ for (const key in myObject) {
 
 const programming = ["js", "rb", "py", "java", "cpp"]
 
-for (const key in programming) {
+for (const key in programming) {  // for in loop
     //console.log(programming[key]);
 }
+
+// Map in not itettrable
 
 // const map = new Map()
 // map.set('IN', "India")

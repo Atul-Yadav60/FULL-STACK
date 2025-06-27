@@ -1,6 +1,6 @@
 const coding = ["js", "ruby", "java", "python", "cpp"]
 
-// coding.forEach( function (val){
+// coding.forEach( function (val){ // call back function dont have name
 //     console.log(val);
 // } )
 
@@ -14,9 +14,9 @@ const coding = ["js", "ruby", "java", "python", "cpp"]
 
 // coding.forEach(printMe)
 
-// coding.forEach( (item, index, arr)=> {
-//     console.log(item, index, arr);
-// } )
+ coding.forEach( (item, index, arr)=> {
+    console.log(item, index, arr);
+ } )
 
 const myCoding = [
     {
