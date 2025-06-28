@@ -16,24 +16,33 @@
     </div>
 </body>
 <script>
-    const parent = document.querySelector('.parent')
+    //------------my code---------------------
+    const parent = document.querySelector('.parent') // it tells about all parents
     // console.log(parent);
-    // console.log(parent.children);
+    // console.log(parent.children); // it tell about how many children present in parent
+
     // console.log(parent.children[1].innerHTML);
 
-    // for (let i = 0; i < parent.children.length; i++) {
-    //      console.log(parent.children[i].innerHTML);
-        
+
+    // for(let i=0 ; i<parent.children.length;i++){
+    //     console.log(parent.children[i].innerHTML); // print all elements
     // }
+
     parent.children[1].style.color = "orange"
-    // console.log(parent.firstElementChild);
-    // console.log(parent.lastElementChild);
 
+    console.log(parent.firstElementChild);
+    console.log(parent.lastElementChild);
+
+
+   
     const dayOne = document.querySelector('.day')
-    // console.log(dayOne);
-    // console.log(dayOne.parentElement);
-    // console.log(dayOne.nextElementSibling);
+    console.log(dayOne);  // it give monday
 
-    console.log("NODES: ", parent.childNodes);
+    console.log(dayOne.parentElement);
+    console.log(dayOne.nextElementSibling);
+
+    
+
+    console.log("NODES: ", parent.childNodes); // tels abot how many nodes in parent it give 9 nodes
 </script>
 </html>

@@ -11,64 +11,154 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <!--Nav bar-->
     <div class="page1">
+        <section class="top-bar">
+            <marquee behavior="" direction="">Coming Soon - Premium Bag Collection</marquee>
+        </section>
+
         <nav class="nav-bar">
             <div class="brand-name">
                 <a href="#">
-                    <img src="./resource/logo.jpg" alt="Passworld 1">
+                    <img id="brand-logo" src="./resource/logo.jpg" alt="Passworld 1">
                 </a>
             </div>
-            <div class="element">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about-us">About us</a></li>
-                    <li><a href="#our-products">Our Products</a></li>
-                    <li><a href="#our-clinets">Our Clints</a></li>
-                    <li><a href="#contact-us">Contact us</a></li>
-                    <div class="btn">
-                        
+            <div class="nav-element">
+                <div id="nav-el" class="home">
+                    <a href="#home">Home</a>
+                </div>
+                <div id="nav-el" class="about">
+                    <a href="#about">About-us</a>
+                </div>
+                <div id="nav-el" class="products">
+                    <a href="#products">Our Products</a>
+                </div>
+                <div id="nav-el" class="client">
+                    <a href="#client">Our Client</a>
+                </div>
+                <div id="nav-el" class="contact-us">
+                    <a href="#contact">Contact us</a>
+                </div>
+                <div id="nav-el" class="quote-btn">
+                    <span class="fas-icons">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </span>
+                    <button class="btn"><a href="#">Get Quote</a></button>
+                </div>
+            </div>
+        </nav>
+
+        <section class="banner">
+            <div class="carousel">
+                <div class="list">
+                    <div class="list-item">
+                        <img src="./banner/nobackground/imgg5.png" alt="Travel Bag">
+                        <div class="intro">
+                            <div class="tag">STYLISH</div>
+                            <div class="category">Traveling Bag</div>
+                            <div class="description">
+                                <h1>"Crafted for Journeys, Built to Last"</h1>
+                                <h3>Explore our premium range of travel bags — where durability meets design.</h3>
+                            </div>
+                            <button class="explore">Explore &#8599;</button>
+                        </div>
                     </div>
-                </ul>
+
+                    <div class="list-item">
+                        <img src="./banner/nobackground/img4.png" alt="School Bag">
+                        <div class="intro">
+                            <div class="tag">STYLISH</div>
+                            <div class="category">School Bag</div>
+                            <div class="description">
+                                <h1>"Perfect for Students, Built for Success"</h1>
+                                <h3>Discover our ergonomic school bags designed for comfort and functionality.</h3>
+                            </div>
+                            <button class="explore">Explore &#8599;</button>
+                        </div>
+                    </div>
+
+                    <div class="list-item">
+                        <img src="./banner/nobackground/imgg7.png" alt="Travel Bag Premium">
+                        <div class="intro">
+                            <div class="tag">PREMIUM</div>
+                            <div class="category">Travel Pro</div>
+                            <div class="description">
+                                <h1>"Adventure Awaits, Pack with Confidence"</h1>
+                                <h3>Professional travel solutions for the modern explorer.</h3>
+                            </div>
+                            <button class="explore">Explore &#8599;</button>
+                        </div>
+                    </div>
+
+                    <div class="list-item">
+                        <img src="./banner/nobackground/img2.png" alt="Student Bag">
+                        <div class="intro">
+                            <div class="tag">DURABLE</div>
+                            <div class="category">Student Essential</div>
+                            <div class="description">
+                                <h1>"Study Smart, Carry Comfortable"</h1>
+                                <h3>Essential bags for academic excellence and daily adventures.</h3>
+                            </div>
+                            <button class="explore">Explore &#8599;</button>
+                        </div>
+                    </div>
+
+                    <div class="list-item">
+                        <img src="./banner/nobackground/img4.png" alt="Office Bag">
+                        <div class="intro">
+                            <div class="tag">PROFESSIONAL</div>
+                            <div class="category">Office Bag</div>
+                            <div class="description">
+                                <h1>"Professional Style, Everyday Functionality"</h1>
+                                <h3>Elevate your professional image with our sophisticated office bags.</h3>
+                            </div>
+                            <button class="explore">Explore &#8599;</button>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-        </nav>
+            <div class="arrows">
+                <button id="prev">< </button>
+                <button id="next">></button>
+            </div>
+        </section>
     </div>
 
     <div class="page2">
-
+        <h2>About Our Products</h2>
     </div>
 
     <div class="page3">
-
+        <h2>Our Collection</h2>
     </div>
 
     <div class="page4">
-
+        <h2>Quality Assurance</h2>
     </div>
 
     <div class="page5">
-
+        <h2>Customer Reviews</h2>
     </div>
 
     <div class="page6">
-
+        <h2>Our Partners</h2>
     </div>
 
     <div class="page7">
-
+        <h2>Contact Information</h2>
     </div>
 
     <div class="page8">
         <footer class="footer" id="footer">
-
+            <h2>Footer Content</h2>
         </footer>
     </div>
 
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 
 </html>
