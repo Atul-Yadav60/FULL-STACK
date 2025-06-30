@@ -19,45 +19,90 @@
    </div>
 </body>
 <script>
-    // document.getElementById('owl').onclick = function(){
+    // it is not best approach
+
+    // document.getElementById('owl').onclick=function(){
     //     alert("owl clicked")
     // }
 
-     // attachEvent()
-    // jQuery - on
+      ///  kya kya padhna hai
+        // // type, timestamp, defaultPrevented
+        // // target, toElement, srcElement, currentTarget,
+        // // clientX, clientY, screenX, screenY
+        // // altkey, ctrlkey, shiftkey, keyCode
 
-    // type, timestamp, defaultPrevented
-    // target, toElement, srcElement, currentTarget,
-    // clientX, clientY, screenX, screenY
-    // altkey, ctrlkey, shiftkey, keyCode
-
-    // document.getElementById('images').addEventListener('click', function(e){
-    //     console.log("clicked inside the ul");
-    // }, false)
+    // best Approach
 
     // document.getElementById('owl').addEventListener('click', function(e){
-    //     console.log("owl clicked");
-    //     e.stopPropagation()
-    // }, false)
+    //     console.log(e)
+    // },false)  // here third paraneter is false it is default if you dont write false its ok
     
-    // document.getElementById('google').addEventListener('click',function(e){
+
+    // other Apporach- not used today
+    // attachEvent()
+    //jQuery - on
+
+
+   // now sating all events
+//    document.getElementById('images').addEventListener('click', function (e) {
+//         console.log("clicked inside the ul")
+//     }, false) 
+
+//     document.getElementById('owl').addEventListener('click', function (e) {
+//             console.log("owl clicked")
+//             e.stopPropagation() // stop the bubbling
+//         }, false)  // event propgationn or bubbling up : if clicked on owl automatic clicked on images
+
+        // Agar hum false ki jagar true ker dete hai to capturing hoga means first images then owl
+
+
+
+    
+
+///////////////////////////////////////////////////////////////
+
+
+
+  
+
+  //  google ka default behaviour change ker rahe hai default behaviour hai ki jab clicked kerte hai to o hame google .com per le jata hai
+
+    
+    // document.getElementById('google').addEventListener('click' , function(e){
     //     e.preventDefault();
-    //     e.stopPropagation()
-    //     console.log("google clicked");
-    // }, false)
-   
-    
-    document.querySelector('#images').addEventListener('click', function(e){
-        console.log(e.target.tagName);
-        if (e.target.tagName === 'IMG') {
-            console.log(e.target.id);
+    //     e.stopPropagation();
+    //     console.log("google clicked")
+       
+    // },false)
+
+
+    // GOAL: click on image and image vanished
+
+    document.querySelector("#images").addEventListener('click', function(e){
+        console.log(e.target)
+
+        if(e.target.tagName === 'IMG'){
             let removeIt = e.target.parentNode
-            removeIt.remove()
+            removeIt.remove() // way 1
+
+            removeIt.parentNode.removeChild(removeIt) // way 2
+ // google per click kerne se puA DELETE NAHI HOGA
         }
-    
-        
+
+       
     })
     
-    //removeIt.parentNode.removeChild(removeIt)
+    // document.querySelector('#images').addEventListener('click', function(e){
+    //     console.log(e.target.tagName);
+    //     if (e.target.tagName === 'IMG') {
+    //         console.log(e.target.id);
+    //         let removeIt = e.target.parentNode
+    //         removeIt.remove()
+    //     }
+    
+        
+    // })
+    
+    // //removeIt.parentNode.removeChild(removeIt)
 </script>
 </html>
