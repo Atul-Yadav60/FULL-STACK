@@ -10,18 +10,44 @@
     <button id="stop">Stop</button>
 </body>
 <script>
-    const sayHitesh = function(){
-        console.log("Hitesh");
-    }
-    const changeText = function(){
-        document.querySelector('h1').innerHTML = "best JS series"
+    //1. Set Timeout fuction::
+    setTimeout(function(){
+        console.log("Atul Yadav")
+    },2000) // seting 2 sec timeout after 2sec it show atul . it is way 1 how to solve this
+
+    const sayAtul = function(){
+        console.log("Atul yadav")
     }
 
-    const changeMe = setTimeout(changeText, 2000)
+    const changeText = function(){
+         document.querySelector('h1').innerHTML = "I am the best"
+    }
+
+   
+
+    setTimeout(sayAtul,2000)
+   const changeMe= setTimeout(changeText, 2500)
+
+    
 
     document.querySelector('#stop').addEventListener('click', function(){
-        clearTimeout(changeMe)
-        console.log("STOPPED")
+        clearTimeout(changeMe) //  clear timme out required refernce
+        console.log("Time out for text chnage is clear")
     })
+
+    //////////////////////////////
+    // const sayHitesh = function(){
+    //     console.log("Hitesh");
+    // }
+    // const changeText = function(){
+    //     document.querySelector('h1').innerHTML = "best JS series"
+    // }
+
+    // const changeMe = setTimeout(changeText, 2000)
+
+    // document.querySelector('#stop').addEventListener('click', function(){
+    //     clearTimeout(changeMe)
+    //     console.log("STOPPED")
+    // })
 </script>
 </html>
