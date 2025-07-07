@@ -1,3 +1,4 @@
+// object literlas 
 const user = {
     username: "hitesh",
     loginCount: 8,
@@ -5,7 +6,7 @@ const user = {
 
     getUserDetails: function(){
         //console.log("Got user details from database");
-        // console.log(`Username: ${this.username}`);
+        // console.log(`Username: ${this.username}`); // here this keyward gives you cntext.
         console.log(this);
     }
 
@@ -18,6 +19,10 @@ const user = {
 // console.log(this);
 
 
+
+// constructor function 
+
+
 function User(username, loginCount, isLoggedIn){
     this.username = username;
     this.loginCount = loginCount;
@@ -28,10 +33,10 @@ function User(username, loginCount, isLoggedIn){
 
     }
 
-    return this
+    return this // return this implicitly defined hota hai
 }
 
-const userOne = new User("hitesh", 12, true)
+const userOne = new User("hitesh", 12, true)  // here new keyward avoid overwwriting 
 const userTwo = new User("ChaiAurCode", 11, false)
 console.log(userOne.constructor);
 //console.log(userTwo);
