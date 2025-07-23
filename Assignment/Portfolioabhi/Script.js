@@ -1,37 +1,39 @@
-const video1= document.getElementById('projectVideo1')
-const video2= document.getElementById('projectVideo2')
-const video3= document.getElementById('projectVideo3')
+const video1 = document.getElementById("projectVideo1");
+const video2 = document.getElementById("projectVideo2");
+const video3 = document.getElementById("projectVideo3");
+const videoList = [video1, video2, video3];
 
-// sidebar elements
+const sideBar = document.querySelector(".sidebar");
+const menu = document.querySelector(".menu-icon");
+const closeIcon = document.querySelector(".close-icon");
+const hoverSign = document.querySelector(".hover-sign");
+const gamepage = document.getElementById("games");
 
-const sideBar= document.querySelector('.sidebar')
-const menu = document.querySelector('.menu-icon')
-const closeIcon = document.querySelector('.close-icon')
+// Play/pause video on hover
+videoList.forEach(function (video) {
+  video.addEventListener("mouseover", function () {
+    video.play();
+    hoverSign.classList.add("active");
+  });
 
-const hoverSign = document.querySelector('.hover-sign')
+  video.addEventListener("mouseout", function () {
+    video.pause();
+    hoverSign.classList.remove("active");
+  });
+});
 
-const videoList = [video1, video2, video3]
+// Sidebar toggle
+menu.addEventListener("click", function () {
+  sideBar.classList.remove("close-sidebar");
+  sideBar.classList.add("open-sidebar");
+});
 
-videoList.forEach(function(vidoe){
-  video1.addEventListener('mouseover' , function(){
-    vidoe.onplay()
-    hoverSign.classList.add("active")
-  })
-  video1.addEventListener("mouseout", function(){
-    vidoe.onpause();
-    hoverSign.classList.remove("active")
-  })
-})
+closeIcon.addEventListener("click", function () {
+  sideBar.classList.remove("open-sidebar");
+  sideBar.classList.add("close-sidebar");
+});
 
-// sideBar elements
-
-menu.addEventListener("click", function(){
-  sideBar.classList.remove("close-sidebar")
-  sideBar.classList.add("open-sidebar")
-})
-
-closeIcon.addEventListener("click", function(){
-  sideBar.classList.remove("open-sidebar")
-  sideBar.classList.add("close-sidebar")
-})
-
+// Open game page on button click
+gamepage.addEventListener("click", function () {
+  window.open("https://www.crazygames.com/", "_blank");
+});
