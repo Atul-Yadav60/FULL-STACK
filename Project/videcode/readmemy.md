@@ -17,3 +17,5 @@ Vide vode Editor
 2. verify all the version related things
 3. install shadcn/ui
 4. push our code to git
+
+<!-- Chapter 2 : Database MongoDB -->
