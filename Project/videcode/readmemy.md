@@ -19,3 +19,10 @@ Vide vode Editor
 4. push our code to git
 
 <!-- Chapter 2 : Database MongoDB -->
+1. Database creation
+2. Prisma setup
+3. git push
+<!-- Chapter 3: Authentication -->
+1. Setup authentication  next auth
+2. google and github authsetup
+3. saving all the userd to the db
