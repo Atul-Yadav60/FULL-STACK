@@ -1,0 +1,20 @@
+{
+  "name": "npm-test",
+  "version": "1.0.0",
+  "description": "is it created to learn npm",
+  "repository": {
+    "type": "git",
+    "url": "no"
+  },
+  "license": "ISC",
+  "author": "atul",
+  "type": "commonjs",
+  "main": "07_npm.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node 07_npm.js"
+  },
+  "dependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
