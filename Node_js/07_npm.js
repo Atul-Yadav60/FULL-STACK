@@ -32,3 +32,5 @@
 //   run `npm fund` for details
 
 // found 0 vulnerabilities
+
+class new
